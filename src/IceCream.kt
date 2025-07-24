@@ -1,0 +1,5 @@
+class IceCream(): Food, Dessert {
+
+
+
+}

@@ -1,5 +1,9 @@
-abstract class Food {
+open class Food {
     val name : String
     var price : double
-    abstract fun cook() = println("")
+    fun cook(): String
+
+    fun discountedPrice(porcentaje: Int): double{
+        return price-((porcentaje/100)*price)
+    }
 }
